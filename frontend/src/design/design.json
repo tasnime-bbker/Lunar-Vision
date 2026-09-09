@@ -1,0 +1,130 @@
+{
+    "designSystem": {
+      "style": {
+        "theme": "dark-modern",
+        "colors": {
+          "background": "#0a0a0a",
+          "backgroundAlt": "#111111",
+          "foreground": "#f9f9f9",
+          "mutedForeground": "#a1a1aa",
+          "accent": "#facc15",
+          "accentContrast": "#0a0a0a",
+          "card": "#1a1a1a",
+          "border": "#262626"
+        },
+        "typography": {
+          "fontFamily": "Inter, sans-serif",
+          "headingWeight": 700,
+          "bodyWeight": 400,
+          "headingSizes": {
+            "xxl": "64px",
+            "xl": "48px",
+            "lg": "32px",
+            "md": "24px",
+            "sm": "18px"
+          },
+          "bodySizes": {
+            "lg": "18px",
+            "md": "16px",
+            "sm": "14px"
+          },
+          "lineHeight": 1.4,
+          "letterSpacing": "tight"
+        },
+        "shadows": {
+          "soft": "0 1px 3px rgba(0,0,0,0.5)",
+          "button": "0 2px 8px rgba(250,204,21,0.4)",
+          "card": "0 0 12px rgba(0,0,0,0.6)"
+        },
+        "radii": {
+          "sm": "6px",
+          "md": "12px",
+          "lg": "24px",
+          "full": "9999px"
+        },
+        "spacing": {
+          "xs": "4px",
+          "sm": "8px",
+          "md": "16px",
+          "lg": "32px",
+          "xl": "64px"
+        }
+      },
+      "structure": {
+        "layout": {
+          "nav": {
+            "position": "top-fixed",
+            "background": "translucent dark",
+            "items": ["logo-left", "links-center", "cta-right"],
+            "ctaStyle": "accent button with full radii"
+          },
+          "hero": {
+            "alignment": "center",
+            "background": "dark with subtle pattern",
+            "components": ["badge/label", "headline large", "subheadline", "primaryCTAs"]
+          },
+          "sections": [
+            {
+              "type": "testimonial-grid",
+              "background": "dark-alt",
+              "items": "cards with stars, avatars, highlight text"
+            },
+            {
+              "type": "feature-list",
+              "columns": 1,
+              "items": "rows with label, description, shortcut key visuals"
+            },
+            {
+              "type": "faq-accordion",
+              "style": "dark cards with accent border on active item"
+            }
+          ],
+          "footer": {
+            "alignment": "center",
+            "background": "darkest",
+            "components": ["links", "legalText"]
+          }
+        },
+        "cards": {
+          "style": "dark elevated",
+          "padding": "md",
+          "borderRadius": "md",
+          "border": "1px solid #262626"
+        },
+        "buttons": {
+          "primary": {
+            "background": "#facc15",
+            "foreground": "#0a0a0a",
+            "shape": "rounded-full",
+            "padding": "sm md",
+            "hover": "brightness-110"
+          },
+          "secondary": {
+            "background": "#1a1a1a",
+            "foreground": "#f9f9f9",
+            "border": "1px solid #262626",
+            "shape": "rounded-md"
+          }
+        }
+      },
+      "interactions": {
+        "animations": {
+          "buttons": "200ms ease-in-out scale/brightness",
+          "cards": "hover:shadow-lg",
+          "accordion": "smooth expand/collapse"
+        },
+        "states": {
+          "focus": "outline-offset-2 outline-accent",
+          "hover": "slight scale-up",
+          "disabled": "opacity-50"
+        }
+      },
+      "patterns": {
+        "heroCTA": "giant bold headline + muted subtitle + stacked accent buttons",
+        "testimonialCard": "dark card with user avatar, star rating, highlighted quote",
+        "featureRow": "icon or shortcut badge + bold label + muted description",
+        "faqAccordion": "expandable card with accent border on active"
+      }
+    }
+  }
+  

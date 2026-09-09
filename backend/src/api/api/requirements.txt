@@ -1,0 +1,17 @@
+strands-agents
+strands-agents-tools
+requests
+rich
+litellm
+fastapi
+uvicorn[standard]
+pydantic
+
+python-multipart
+
+httpx
+requests
+
+python-dotenv
+redis
+hiredis
